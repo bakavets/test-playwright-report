@@ -12,4 +12,4 @@ done
 source /root/.nvm/nvm.sh
 echo "[INFO] Test Suite name ${testsuite}";
 npx playwright --version
-npx playwright test --shard=${shard}/${totalshards}
+npx playwright test --shard=${shard}/${totalshards} --workers ${workers}
